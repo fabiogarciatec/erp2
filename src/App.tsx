@@ -11,7 +11,7 @@ import React from 'react';
       return (
         <div style={{ display: 'flex' }}>
           <Sidebar />
-          <div style={{ flex: 1 }}>
+          <div style={{ flex: 1, padding: '20px' }}>
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/cadastros" element={<Cadastros />} />

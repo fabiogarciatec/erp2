@@ -3,10 +3,10 @@ import React from 'react';
 
     const Sidebar: React.FC = () => {
       return (
-        <div style={{ width: '250px', background: '#f0f0f0', padding: '20px' }}>
+        <div style={{ width: '250px', background: '#f0f0f0', padding: '20px', display: 'flex', flexDirection: 'column', height: '100vh' }}>
           <img src="/logo.png" alt="Logo" style={{ width: '100%', marginBottom: '20px' }} />
           <nav>
-            <ul>
+            <ul style={{ listStyleType: 'none', padding: 0 }}>
               <li><Link to="/">Dashboard</Link></li>
               <li><Link to="/cadastros">Cadastros</Link></li>
               <li><Link to="/vendas">Vendas</Link></li>
